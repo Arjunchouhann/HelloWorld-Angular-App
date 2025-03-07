@@ -8,5 +8,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Hello_World_Angular_App';
+  title = 'Hello from bridgeLabz';
+  imgUrl= 'assets/BL_logo_square_jpg.jpg'
 }
