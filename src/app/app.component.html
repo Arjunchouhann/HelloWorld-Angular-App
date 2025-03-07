@@ -2,7 +2,10 @@
   <h1>Hello {{this.userName}} from BridgeLabz</h1>
   <img [src]="imgUrl"  (click)="onClick()" alt="The BridgeLabz logo: a Bridge to Employment through a Lab Works."/>
 </div>
-<div>
-  <input [(ngModel)]="userName" />
+<div class="center-container">
+  <input (input)=" onInput() " [(ngModel)]="userName" />
+  <span class = error-output>{{this.nameError}}</span>
+  
 </div>
+
 <router-outlet></router-outlet>
