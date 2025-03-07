@@ -8,6 +8,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Hello from bridgeLabz';
-  imgUrl= 'assets/BL_logo_square_jpg.jpg'
+  title = 'Helloworld';
+  imgUrl = 'assets/BL_logo_square_png.png'
+  url = 'https://www.bridgelabz.com';
+
+  ngOnInit(): void {
+    this.title = "Hello from BridgeLabz";
+  }
+
+  onClick(){
+    console.log("Save button is clicked!");
+    window.open(this.url, "_blank");
+  }
 }
